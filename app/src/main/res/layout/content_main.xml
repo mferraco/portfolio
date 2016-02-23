@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,51 +10,45 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <ScrollView
+    <LinearLayout
+        android:id="@+id/linear_button_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-        <LinearLayout
-            android:id="@+id/linear_button_layout"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/portfolio_title"
+            android:textAlignment="center"
+            android:textSize="@dimen/default_header_text_size" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="30dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/portfolio_title"
-                android:textAlignment="center"
-                android:textSize="30dp" />
-            
-            <Button
-                style="@style/ButtonStyle"
-                android:text="Spotify Streamer" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/spotify_app" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:text="Scores App" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/scores_app" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:text="Library App" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/library_app" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:text="Build It Bigger" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/built_it_biger_app" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:text="XYZ Reader" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/xyz_reader_app" />
 
-            <Button
-                style="@style/ButtonStyle"
-                android:text="Capstone" />
+        <Button
+            style="@style/ButtonStyle"
+            android:text="@string/capstone_app" />
 
-        </LinearLayout>
+    </LinearLayout>
 
-    </ScrollView>
-
-</LinearLayout>
+</ScrollView>
