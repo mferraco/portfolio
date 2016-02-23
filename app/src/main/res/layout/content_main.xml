@@ -46,7 +46,7 @@
             android:text="@string/xyz_reader_app" />
 
         <Button
-            style="@style/ButtonStyle"
+            style="@style/ButtonStyle.CapstoneButtonStyle"
             android:text="@string/capstone_app" />
 
     </LinearLayout>

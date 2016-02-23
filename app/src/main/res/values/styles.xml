@@ -22,6 +22,10 @@
         <item name="android:textSize">@dimen/button_text_size</item>
     </style>
 
+    <style name="ButtonStyle.CapstoneButtonStyle">
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
