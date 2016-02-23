@@ -20,6 +20,7 @@
         <item name="android:background">@color/colorPrimaryDark</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:onClick">projectButtonClick</item>
     </style>
 
     <style name="ButtonStyle.CapstoneButtonStyle">

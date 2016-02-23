@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,22 +16,12 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        LinearLayout buttonLayout = (LinearLayout) findViewById(R.id.linear_button_layout);
+    }
 
-        // Loop through every button and add the on click listener
-        for(int i = 0; i < buttonLayout.getChildCount(); ++i) {
-            final View childView = buttonLayout.getChildAt(i);
-
-            if (childView instanceof Button) {
-                childView.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        Toast.makeText(getApplicationContext(), "This button will launch " + ((Button) childView).getText(), Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
-        }
-
+    @SuppressWarnings("unused")
+    public void projectButtonClick(View view) {
+        Button btn = (Button) view;
+        Toast.makeText(getApplicationContext(), getString(R.string.toast_message) + btn.getText(), Toast.LENGTH_SHORT).show();
     }
 
 }
